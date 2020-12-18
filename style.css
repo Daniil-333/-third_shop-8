@@ -19,10 +19,10 @@ a {
 .no-arrow::-webkit-inner-spin-button {
   display: none;
 }
-.logo-style {
-  display: flex;
-  align-items: center;
-  margin-right: 5%;
+.logo-style .logo-link {
+  /*display: flex;
+    align-items: center;
+    margin-right: 5%;*/
 }
 .logo-style .logo-link .logo-img {
   transition: transform 1.5s;
@@ -190,18 +190,18 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.up-panel .container .logo {
-  display: flex;
-  align-items: center;
-  margin-right: 5%;
+.up-panel .container .logo-link .logo-link {
+  /*display: flex;
+    align-items: center;
+    margin-right: 5%;*/
 }
-.up-panel .container .logo .logo-link .logo-img {
+.up-panel .container .logo-link .logo-link .logo-img {
   transition: transform 1.5s;
 }
-.up-panel .container .logo .logo-link .logo-img:hover {
+.up-panel .container .logo-link .logo-link .logo-img:hover {
   transform: rotate(360deg);
 }
-.up-panel .container .logo .logo-h1 {
+.up-panel .container .logo-link .logo-h1 {
   font-size: 27px;
   line-height: 32px;
   font-weight: 300;
@@ -210,7 +210,7 @@ a {
   color: #222222;
   margin-left: 13px;
 }
-.up-panel .container .logo .logo-h1 .logo-h1__span {
+.up-panel .container .logo-link .logo-h1 .logo-h1__span {
   font-weight: 900;
   color: #f16d7f;
 }
@@ -730,10 +730,10 @@ a {
   display: flex;
   padding: 110px 0;
 }
-.footer .container .footer-content .footer-logo .logo {
-  display: flex;
-  align-items: center;
-  margin-right: 5%;
+.footer .container .footer-content .footer-logo .logo .logo-link {
+  /*display: flex;
+    align-items: center;
+    margin-right: 5%;*/
 }
 .footer .container .footer-content .footer-logo .logo .logo-link .logo-img {
   transition: transform 1.5s;
