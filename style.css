@@ -671,6 +671,7 @@ a {
 .subscribe .container .subscribe-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50%;
   padding: 11% 0;
   box-sizing: border-box;
@@ -682,14 +683,12 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #222224;
-  text-align: center;
 }
 .subscribe .container .subscribe-form .subscribe-container__subtitle {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
   padding-bottom: 35px;
-  text-align: center;
 }
 .subscribe .container .subscribe-form .send-form {
   margin: 0 auto;
@@ -698,7 +697,7 @@ a {
   width: 275px;
   background-color: #e1e1e1;
   border-radius: 23px 0 0 23px;
-  padding: 16px 28px;
+  padding: 17px 28px;
   border: none;
   box-sizing: border-box;
 }
@@ -848,7 +847,7 @@ a {
   display: flex;
 }
 .main-product .container .filter-aside {
-  width: 315px;
+  width: 240px;
   margin-right: 50px;
 }
 .main-product .container .filter-aside .filter-aside-item .filter-aside-input {
@@ -871,10 +870,11 @@ a {
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #6f6e6e;
   border-left: 5px solid #ef5b70;
   border-bottom: 1px solid #ebebeb;
   cursor: pointer;
-  padding: 3%;
+  padding: 5px;
   box-sizing: border-box;
 }
 .main-product .container .filter-aside .filter-aside-item .filter-aside-label::after {
@@ -884,7 +884,7 @@ a {
   line-height: 19px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: #6f6e6e;
   margin-left: auto;
 }
 .main-product .container .filter-aside .filter-aside-item .filter-aside-content {
@@ -901,6 +901,9 @@ a {
 }
 .main-product .container .filter-aside .filter-aside-item .filter-aside-content .filter-aside-link:hover {
   color: #ef5b70;
+}
+.main-product .container .products {
+  max-width: 850px;
 }
 .main-product .container .products .filters-center {
   display: flex;
@@ -1720,6 +1723,7 @@ a {
   text-align: center;
   margin-bottom: 70px;
 }
+/*Медиа-запросы*/
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 15px;
@@ -1755,6 +1759,9 @@ a {
   }
   .subscribe .container .subscribe-form .send-form .send-form__button {
     max-width: 90px;
+  }
+  .main-product .container .filter-aside {
+    width: 150px;
   }
 }
 @media screen and (max-width: 660px) {
