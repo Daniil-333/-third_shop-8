@@ -13,8 +13,10 @@
 <body>
 <header class="up-panel">
     <div class="container">
-        <a href="index.html" class="logo-link"><img src="img/logo.png" alt="Логотип" class="logo-img"><span
-                class="logo-h1">bran<span class="logo-h1__span">d</span></span></a>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип" class="logo-img">
+            <span class="logo-title">bran<span class="logo-title__span">d</span></span>
+        </a>
         <form action="#" class="nav-search"><a class="nav-search-menu" href="#">Browse <i class="fa fa-caret-down"
                                                                                           aria-hidden="true"></i></a><input
                 type="search" class="search-item" placeholder="Search for item..."><a href="#" class="search"><i
@@ -25,13 +27,17 @@
     </div>
 </header>
 <nav class="main-menu">
-    <a href="#" class="main-menu-link">Home</a>
-    <a href="#" class="main-menu-link">Man</a>
-    <a href="#" class="main-menu-link">Women</a>
-    <a href="#" class="main-menu-link">Kids</a>
-    <a href="#" class="main-menu-link">Accoseriese</a>
-    <a href="#" class="main-menu-link">Featured</a>
-    <a href="#" class="main-menu-link">Hot Deals</a>
+    <label for="main-menu__collapse" class="main-menu__collapse-btn"><span class="fa fa-bars"></span></label>
+    <input type="checkbox" id="main-menu__collapse" class="main-menu__collapse">
+    <div class="main-menu__block">
+        <a href="#" class="main-menu-link">Home</a>
+        <a href="#" class="main-menu-link">Man</a>
+        <a href="#" class="main-menu-link">Women</a>
+        <a href="#" class="main-menu-link">Kids</a>
+        <a href="#" class="main-menu-link">Accoseriese</a>
+        <a href="#" class="main-menu-link">Featured</a>
+        <a href="#" class="main-menu-link">Hot Deals</a>
+    </div>
 </nav>
 <main class="main-page-content">
     <section class="main-screen">
@@ -155,39 +161,12 @@
         </div>
     </section>
     <section class="offer-women">
-        <div class="banner">
-            <p class="banner-text">30% <span>OFFER</span></p>
-            <span class="banner-text banner-text__span">FOR WOMEN</span>
-        </div>
-        <div class="banner-side">
-            <div class="banner-side-block"><img src="img/off_wom_car.png" alt="Доставка" class="banner-side-img">
-                <div class="banner-side-block-text"><p>Free Delivery</p>Worldwide delivery on all. Authorit tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
-            </div>
-            <div class="banner-side-block"><img src="img/off_wom_sale.png" alt="Доставка" class="banner-side-img">
-                <div class="banner-side-block-text"><p>Sales & discounts</p>Worldwide delivery on all. Authorit
-                    tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
-            </div>
-            <div class="banner-side-block"><img src="img/off_wom_crown.png" alt="Доставка" class="banner-side-img">
-                <div class="banner-side-block-text"><p>Quality assurance</p>Worldwide delivery on all. Authorit
-                    tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="banner-side-product">
         <div class="container">
-            <div class="banner-side-blocks">
+            <div class="banner">
+                <p class="banner-text">30% <span>OFFER</span></p>
+                <span class="banner-text banner-text__span">FOR WOMEN</span>
+            </div>
+            <div class="banner-side">
                 <div class="banner-side-block"><img src="img/off_wom_car.png" alt="Доставка" class="banner-side-img">
                     <div class="banner-side-block-text"><p>Free Delivery</p>Worldwide delivery on all. Authorit tively
                         morph
@@ -205,6 +184,38 @@
                 </div>
                 <div class="banner-side-block"><img src="img/off_wom_crown.png" alt="Доставка" class="banner-side-img">
                     <div class="banner-side-block-text"><p>Quality assurance</p>Worldwide delivery on all. Authorit
+                        tively
+                        morph
+                        next-generation
+                        innov tion with extensive models.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner-side-general">
+        <div class="container">
+            <div class="banner-side-content">
+                <div class="banner-side__item"><img src="img/off_wom_car.png" alt="Доставка" class="banner-side__img">
+                    <div class="banner-side__info"><p class="banner-side__title">Free Delivery</p>Worldwide delivery on all.
+                        Authorit tively
+                        morph
+                        next-generation
+                        innov tion with extensive models.
+                    </div>
+                </div>
+                <div class="banner-side__item"><img src="img/off_wom_sale.png" alt="Доставка" class="banner-side__img">
+                    <div class="banner-side__info"><p class="banner-side__title">Sales & discounts</p>Worldwide delivery on
+                        all. Authorit
+                        tively
+                        morph
+                        next-generation
+                        innov tion with extensive models.
+                    </div>
+                </div>
+                <div class="banner-side__item"><img src="img/off_wom_crown.png" alt="Доставка" class="banner-side__img">
+                    <div class="banner-side__info"><p class="banner-side__title">Quality assurance</p>Worldwide delivery on
+                        all. Authorit
                         tively
                         morph
                         next-generation
@@ -243,10 +254,10 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-logo">
-                <div class="logo"><a href="index.html"
-                                     class="logo-link"><img src="img/logo.png" alt="Логотип" class="logo-img"></a>
-                    <h1 class="logo-h1">bran<span class="logo-h1__span">d</span>
-                    </h1></div>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Логотип" class="logo-img">
+                    <span class="logo-title">bran<span class="logo-title__span">d</span></span>
+                </a>
                 <p class="footer-logo-text">Objectively transition extensive data rather than cross functional
                     solutions.
                     Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
@@ -285,14 +296,16 @@
         </div>
     </div>
     <div class="down-panel">
-        <div class="down-panel-block">
-            <p class="footer-policy">&copy; 2017 Brand All Rights Reserved.</p>
-            <div class="footer-social">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <div class="container">
+            <div class="down-panel-block">
+                <p class="footer-policy">&copy; 2017 Brand All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </div>
