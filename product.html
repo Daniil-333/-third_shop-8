@@ -20,7 +20,8 @@
             <span class="logo__title">bran<span class="logo__title_span">d</span></span>
         </a>
         <form action="#" class="header__form">
-            <details class="header__browse"><summary class="header__summary">Browse</summary>
+            <details class="header__browse">
+                <summary class="header__summary">Browse</summary>
                 <div class="drop">
                     <div class="drop__col">
                         <h3 class="drop__h3">Women</h3>
@@ -43,12 +44,55 @@
                             <li><a href="#" class="drop__link">Jackets/Coats</a></li>
                         </ul>
                     </div>
-                </div></li>
-            </details><input type="search" class="search__input" placeholder="Search for item..."><a href="#" class="search__btn"><i
+                </div>
+                </li>
+            </details>
+            <input type="search" class="search__input" placeholder="Search for item..."><a href="#" class="search__btn"><i
                 class="fa fa-search" aria-hidden="true"></i></a></form>
-        <div class="account"><img src="img/basket.png" alt="Корзина" class="account__img">
-            <p class="account__drop">My Account <i class="fa fa-caret-down"
-                                                   aria-hidden="true"></i></p></div>
+        <div class="cart"><img src="img/basket.png" alt="Корзина" class="cart__img">
+            <details class="cart__btn">
+                <summary class="cart__summary">My Account</summary>
+                <div class="cart-drop">
+                    <div class="cart-drop__item">
+                        <a href="#"
+                           class="cart-drop__link"><img src="img/cart_drop1.jpg" alt="product photo"
+                                                        class="cart-drop__img"></a>
+                        <div class="cart-drop__info">
+                            <p class="cart-drop__title">Rebox Zane</p>
+                            <div class="cart-drop__raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="cart-drop__price">1 <span class="cart-drop__span">x</span> $250</p>
+                        </div>
+                        <a href="#" class="cart-drop__action"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="cart-drop__item">
+                        <a href="#"
+                           class="cart-drop__link"><img src="img/s-p-slider.jpg" alt="product photo"
+                                                        class="cart-drop__img" width="72px"></a>
+                        <div class="cart-drop__info">
+                            <p class="cart-drop__title">Rebox Zane</p>
+                            <div class="cart-drop__raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="cart-drop__price">1 <span class="cart-drop__span">x</span> $250</p>
+                        </div>
+                        <a href="#" class="cart-drop__action"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="cart-drop__total">Total <span class="cart-drop__span">$500.00</span></p>
+                    <a href="#" class="cart-drop__button">Checkout</a>
+                    <a href="#" class="cart-drop__button">Go to cart</a>
+                </div>
+            </details>
+        </div>
     </div>
 </header>
 <nav class="nav">
@@ -658,34 +702,32 @@
         </div>
     </div>
 </main>
-<section class="banner-side-general">
+<section class="sale-side sale-side-general">
     <div class="container">
-        <div class="banner-side-content">
-            <div class="banner-side__item"><img src="img/off_wom_car.png" alt="Доставка" class="banner-side__img">
-                <div class="banner-side__info"><p class="banner-side__title">Free Delivery</p>Worldwide delivery on all.
-                    Authorit tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
+        <div class="sale-side__item"><img src="img/off_wom_car.png" alt="Доставка" class="sale-side__img">
+            <div class="sale-side__info"><p class="sale-side__title">Free Delivery</p>Worldwide delivery on all.
+                Authorit tively
+                morph
+                next-generation
+                innov tion with extensive models.
             </div>
-            <div class="banner-side__item"><img src="img/off_wom_sale.png" alt="Доставка" class="banner-side__img">
-                <div class="banner-side__info"><p class="banner-side__title">Sales & discounts</p>Worldwide delivery on
-                    all. Authorit
-                    tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
+        </div>
+        <div class="sale-side__item"><img src="img/off_wom_sale.png" alt="Доставка" class="sale-side__img">
+            <div class="sale-side__info"><p class="sale-side__title">Sales & discounts</p>Worldwide delivery on
+                all. Authorit
+                tively
+                morph
+                next-generation
+                innov tion with extensive models.
             </div>
-            <div class="banner-side__item"><img src="img/off_wom_crown.png" alt="Доставка" class="banner-side__img">
-                <div class="banner-side__info"><p class="banner-side__title">Quality assurance</p>Worldwide delivery on
-                    all. Authorit
-                    tively
-                    morph
-                    next-generation
-                    innov tion with extensive models.
-                </div>
+        </div>
+        <div class="sale-side__item"><img src="img/off_wom_crown.png" alt="Доставка" class="sale-side__img">
+            <div class="sale-side__info"><p class="sale-side__title">Quality assurance</p>Worldwide delivery on
+                all. Authorit
+                tively
+                morph
+                next-generation
+                innov tion with extensive models.
             </div>
         </div>
     </div>

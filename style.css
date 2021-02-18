@@ -111,30 +111,29 @@ summary::-webkit-details-marker {
 .product-box .product .product__add:active {
   border: 1px solid #222222;
 }
-.banner-side {
-  max-width: 372px;
-  background-color: #222222;
-  padding: 48px 36px 66px;
+.sale-side {
+  padding: 50px 35px 65px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.banner-side .banner-side__item {
+.sale-side__item {
   display: flex;
   align-items: end;
+  width: 300px;
 }
-.banner-side .banner-side__item .banner-side__img {
+.sale-side__item .sale-side__img {
   margin-right: 30px;
 }
-.banner-side .banner-side__item .banner-side__info {
+.sale-side__item .sale-side__info {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #fbfbfb;
 }
-.banner-side .banner-side__item .banner-side__info .banner-side__title {
+.sale-side__item .sale-side__info .sale-side__title {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
@@ -773,63 +772,30 @@ summary::-webkit-details-marker {
 }
 .sale {
   margin-bottom: 95px;
-}
-.sale .container {
-  display: flex;
-}
-.sale .container .banner {
-  position: relative;
-  max-width: 768px;
-  background: url("img/offer-women-fon.jpg");
-  background-size: cover;
+  background: url("img/offer-women-fon.jpg") no-repeat #222222;
+  height: 529px;
   box-sizing: border-box;
-  padding: 11.5% 38.3% 26% 3%;
+  display: flex;
+  justify-content: space-between;
 }
-.sale .container .banner .banner-text {
+.sale__h3-box {
+  padding: 145px 0 0 40px;
+}
+.sale__h3-box .sale__h3 {
   font-size: 53.7px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.025em;
   color: #ffffff;
 }
-.sale .container .banner .banner-text span:nth-of-type(1) {
+.sale__h3-box .sale__span {
+  font-size: 53.7px;
   color: #f16d7f;
 }
-.sale .container .banner .banner-text__span {
+.sale__h3-box .sale__subtitle {
   font-size: 32.2px;
 }
-.sale .container .banner-side {
-  max-width: 372px;
-  background-color: #222222;
-  padding: 48px 36px 66px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.sale .container .banner-side .banner-side__item {
-  display: flex;
-  align-items: end;
-}
-.sale .container .banner-side .banner-side__item .banner-side__img {
-  margin-right: 30px;
-}
-.sale .container .banner-side .banner-side__item .banner-side__info {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
-}
-.sale .container .banner-side .banner-side__item .banner-side__info .banner-side__title {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
-  padding-bottom: 12px;
-}
-.banner-side-general {
+.sale-side-general {
   display: none;
 }
 .subscribe {
@@ -1353,55 +1319,24 @@ summary::-webkit-details-marker {
   border: 2px solid #ef5b70;
   border-radius: 3px;
 }
-.banner-side-general {
-  max-width: 372px;
+.sale-side-general {
   background-color: #222222;
-  padding: 48px 36px 66px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  display: block;
-  background-color: #222224;
-  max-width: none;
   padding: 5% 0 8%;
 }
-.banner-side-general .banner-side__item {
-  display: flex;
-  align-items: end;
-}
-.banner-side-general .banner-side__item .banner-side__img {
-  margin-right: 30px;
-}
-.banner-side-general .banner-side__item .banner-side__info {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
-}
-.banner-side-general .banner-side__item .banner-side__info .banner-side__title {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
-  padding-bottom: 12px;
-}
-.banner-side-general .container .banner-side-content {
+.sale-side-general .container {
   display: flex;
   justify-content: space-between;
 }
-.banner-side-general .container .banner-side-content .banner-side__item {
-  max-width: 310px;
+.sale-side-general .container .sale-side__item {
+  width: 320px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
-.banner-side-general .container .banner-side-content .banner-side__item .banner-side__img {
+.sale-side-general .container .sale-side__item .sale-side__img {
   margin: 0 0 8% 0;
 }
-.banner-side-general .container .banner-side-content .banner-side__item .banner-side__info {
+.sale-side-general .container .sale-side__item .sale-side__info {
   text-align: center;
 }
 .main-checkout {
@@ -1969,10 +1904,10 @@ summary::-webkit-details-marker {
   box-sizing: border-box;
   cursor: pointer;
 }
-.main-single-page .additions-items {
+.main-single-page .additions {
   padding-bottom: 30px;
 }
-.main-single-page .additions-items .additions-item-h4 {
+.main-single-page .additions .additions__h4 {
   font-size: 24px;
   line-height: 20px;
   font-weight: 900;

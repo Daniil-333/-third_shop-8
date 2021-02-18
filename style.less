@@ -170,31 +170,30 @@ summary {
   }
 }
 
-.banner-side {
-  max-width: 372px;
-  background-color: @textColor;
-  padding: 48px 36px 66px;
+.sale-side {
+  padding: 50px 35px 65px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
-  .banner-side__item {
+  &__item {
     display: flex;
     align-items: end;
+    width: 300px;
 
-    .banner-side__img {
+    .sale-side__img {
       margin-right: 30px;
     }
 
-    .banner-side__info {
+    .sale-side__info {
       font-size: 14px;
       line-height: 24px;
       font-weight: 300;
       letter-spacing: 0.025em;
       color: #fbfbfb;
 
-      .banner-side__title {
+      .sale-side__title {
         font-size: 20px;
         line-height: 1.2;
         font-weight: 700;
@@ -412,6 +411,7 @@ summary {
         &[open] .cart-drop {
           display: block;
         }
+
         &[open] .cart__summary::after {
           content: '\f0d7';
         }
@@ -484,6 +484,7 @@ summary {
           font-weight: 400;
           text-transform: uppercase;
           color: #f16d7f;
+
           .cart-drop__span {
             font-size: 10px;
           }
@@ -826,42 +827,34 @@ summary {
 
 .sale {
   margin-bottom: 95px;
+  background: url("img/offer-women-fon.jpg") no-repeat @textColor;
+  height: 529px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
 
-  .container {
-    display: flex;
-
-    .banner {
-      position: relative;
-      max-width: 768px;
-      background: url("img/offer-women-fon.jpg");
-      background-size: cover;
-      box-sizing: border-box;
-      padding: 11.5% 38.3% 26% 3%;
-
-      .banner-text {
-        font-size: 53.7px;
-        line-height: 1.2;
-        font-weight: 700;
-        letter-spacing: 0.025em;
-        color: #ffffff;
-
-        span:nth-of-type(1) {
-          color: @siteColor;
-        }
-      }
-
-      .banner-text__span {
-        font-size: 32.2px;
-      }
+  &__h3-box {
+    padding: 145px 0 0 40px;
+    .sale__h3 {
+      font-size: 53.7px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: #ffffff;
     }
 
-    .banner-side {
-      .banner-side;
+    .sale__span {
+      font-size: 53.7px;
+      color: @siteColor;
+    }
+
+    .sale__subtitle {
+      font-size: 32.2px;
     }
   }
 }
 
-.banner-side-general {
+.sale-side-general {
   display: none;
 }
 
@@ -1477,33 +1470,27 @@ summary {
   }
 }
 
-.banner-side-general {
-  .banner-side;
-  display: block;
-  background-color: #222224;
-  max-width: none;
+.sale-side-general {
+  background-color: #222222;
   padding: 5% 0 8%;
 
   .container {
-    .banner-side-content {
-      display: flex;
-      justify-content: space-between;
-
-      .banner-side__item {
-        max-width: 310px;
+    display: flex;
+    justify-content: space-between;
+      .sale-side__item {
+        width: 320px;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
 
-        .banner-side__img {
+        .sale-side__img {
           margin: 0 0 8% 0;
         }
 
-        .banner-side__info {
+        .sale-side__info {
           text-align: center;
         }
       }
-    }
   }
 }
 
@@ -2170,10 +2157,10 @@ summary {
     }
   }
 
-  .additions-items {
+  .additions {
     padding-bottom: 30px;
 
-    .additions-item-h4 {
+    .additions__h4 {
       font-size: 24px;
       line-height: 20px;
       font-weight: 900;
